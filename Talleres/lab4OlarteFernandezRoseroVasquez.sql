@@ -40,3 +40,10 @@ valor number(10,2),
 fecha_movimiento date,
 foreign key (numero_cuenta) references Cuentas,
 primary key (numero));
+
+insert into Movimientos values(100, 1, D, 10000, TO_DATE('01-01-2000','DD-MM-YYYY', '10:00:23', 'HH:MI:SS'));
+insert into Movimientos values(100, 2, D, 25000, TO_DATE('01-02-2000','DD-MM-YYYY', '10:05:23', 'HH:MI:SS'));
+insert into Movimientos values(100, 3, C, 5000, TO_DATE('01-02-2000','DD-MM-YYYY', '10:10:23', 'HH:MI:SS'));
+insert into Movimientos values(400, 1, D, 58000, TO_DATE('01-02-2000','DD-MM-YYYY', '10:15:23', 'HH:MI:SS'));
+insert into Movimientos values(400, 2, I, 2500, TO_DATE('01-01-2000','DD-MM-YYYY', '10:00:23', 'HH:MI:SS'));
+
