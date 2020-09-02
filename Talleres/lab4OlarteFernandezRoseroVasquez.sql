@@ -40,6 +40,14 @@ valor number(10,2),
 fecha_movimiento date,
 foreign key (numero_cuenta) references Cuentas,
 primary key (numero));
+
+insert into Clientes values (1, 'Pedro', 'Perez', TO_DATE('18/01/1980', 'DD/MM/YYYY'), TO_DATE('18/01/1990','DD/MM/YYYY'), 'M');
+insert into Clientes values (2, 'Maria', 'Restrepo', TO_DATE('18/02/1970', 'DD/MM/YYYY'), TO_DATE('18/02/1990','DD/MM/YYYY'), 'F');
+insert into Clientes values (3, 'Juana', 'Arias', TO_DATE('18/03/1990', 'DD/MM/YYYY'), TO_DATE('18/03/1990','DD/MM/YYYY'), 'F');
+insert into Clientes values (4, 'Carlos', 'Lozano', TO_DATE('18/04/2000', 'DD/MM/YYYY'), TO_DATE('18/04/2000','DD/MM/YYYY'), 'M');
+insert into Clientes values (5, 'Esteban', 'Gonzalez', TO_DATE('18/02/2001', 'DD/MM/YYYY'), TO_DATE('18/02/2001','DD/MM/YYYY'), 'M');
+insert into Clientes values (6, 'John', 'Hurtado', TO_DATE('20/02/1970', 'DD/MM/YYYY'), TO_DATE('20/02/1990','DD/MM/YYYY'), 'M');
+insert into Clientes values (7, 'Juana', 'Perez', TO_DATE('08/08/1950', 'DD/MM/YYYY'), TO_DATE('08/08/1990','DD/MM/YYYY'), 'F');         
              
 insert into cuentas values (100, 'A', 10, null, 0);
 insert into cuentas values (200, 'A', 10, null, 100);
