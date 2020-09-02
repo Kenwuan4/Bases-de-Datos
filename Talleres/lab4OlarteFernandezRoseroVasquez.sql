@@ -40,7 +40,13 @@ valor number(10,2),
 fecha_movimiento date,
 foreign key (numero_cuenta) references Cuentas,
 primary key (numero));
-<<<<<<< HEAD
+
+insert into cuentas values (100, 'A', 10, null, 0);
+insert into cuentas values (200, 'A', 10, null, 100);
+insert into cuentas values (300, 'C', 10, null, 500);
+insert into cuentas values (400, 'C', 10, null, 1000);
+insert into cuentas values (500, 'A', 10, null, 100);
+insert into cuentas values (600, 'A', 10, null, 50);
 
 insert into Movimientos values(100, 1, D, 10000, TO_DATE('01-01-2000','DD-MM-YYYY', '10:00:23', 'HH:MI:SS'));
 insert into Movimientos values(100, 2, D, 25000, TO_DATE('01-02-2000','DD-MM-YYYY', '10:05:23', 'HH:MI:SS'));
@@ -48,12 +54,3 @@ insert into Movimientos values(100, 3, C, 5000, TO_DATE('01-02-2000','DD-MM-YYYY
 insert into Movimientos values(400, 1, D, 58000, TO_DATE('01-02-2000','DD-MM-YYYY', '10:15:23', 'HH:MI:SS'));
 insert into Movimientos values(400, 2, I, 2500, TO_DATE('01-01-2000','DD-MM-YYYY', '10:00:23', 'HH:MI:SS'));
 
-=======
-             
-insert into cuentas values (100, 'A', 10, null, 0);
-insert into cuentas values (200, 'A', 10, null, 100);
-insert into cuentas values (300, 'C', 10, null, 500);
-insert into cuentas values (400, 'C', 10, null, 1000);
-insert into cuentas values (500, 'A', 10, null, 100);
-insert into cuentas values (600, 'A', 10, null, 50);
->>>>>>> 46ab14932467de63124ccaa5ae931d8296bc8ac3
